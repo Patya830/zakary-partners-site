@@ -59,7 +59,8 @@ const Index = () => {
       name: "Ялковский Владимир",
       position: "Юрист",
       speciality: "Статистика дел",
-      image: "/img/e28a7833-bf8a-4edf-a123-7ee9d60f9a57.jpg",
+      image:
+        "https://cdn.poehali.dev/files/c1854827-2275-441a-b52b-f12bb743a254.jpg",
     },
   ];
 

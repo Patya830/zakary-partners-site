@@ -289,7 +289,7 @@ const Index = () => {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-24 h-24 rounded-full object-cover mx-auto shadow-lg border-2 border-gold/30"
+                      className="w-32 h-32 rounded-full object-cover mx-auto shadow-lg border-2 border-gold/30"
                     />
                   </div>
                   <h3 className="text-xl font-playfair font-semibold text-navy mb-2">

@@ -101,7 +101,10 @@ const ReviewsSection = () => {
           )}
         </Tabs>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 space-y-4">
+          <p className="text-cream/70 text-lg italic">
+            Вот что говорят о нас те, кто уже воспользовался нашими услугами
+          </p>
           <div className="flex items-center justify-center space-x-2 text-cream/80">
             <Icon name="Star" size={20} className="text-gold fill-gold" />
             <span className="text-2xl font-bold text-gold">5.0</span>

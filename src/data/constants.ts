@@ -5,12 +5,23 @@ export const achievements = [
 ];
 
 export const servicesB2B = [
-  { name: "Корпоративное право", icon: "Users" },
-  { name: "Налоговое консультирование", icon: "Calculator" },
-  { name: "Трудовое право", icon: "Briefcase" },
+  { name: "Сопровождение бизнеса", icon: "TrendingUp" },
+  { name: "Консультации и правовые экспертизы", icon: "MessageCircle" },
+  { name: "Внесение изменений в учредительные документы", icon: "Edit" },
+  { name: "Санкционное право", icon: "Shield" },
+  { name: "Due Diligence", icon: "Search" },
   { name: "Регистрация компаний", icon: "Building" },
+  { name: "Ликвидация компаний", icon: "XCircle" },
   { name: "Банкротство юридических лиц", icon: "AlertTriangle" },
-  { name: "Договорное право", icon: "FileText" },
+  { name: "Исправление ошибок в ЕГРЮЛ", icon: "RefreshCw" },
+  { name: "Сопровождение сделок с недвижимостью", icon: "Home" },
+  { name: "Сопровождение при проверках", icon: "CheckCircle" },
+  { name: "Арбитражные споры", icon: "Scale" },
+  { name: "Налоговые споры", icon: "Calculator" },
+  { name: "Взыскание долгов", icon: "CreditCard" },
+  { name: "Разработка и анализ договоров", icon: "FileText" },
+  { name: "Корпоративные споры", icon: "Users" },
+  { name: "Административные споры", icon: "Gavel" },
 ];
 
 export const servicesB2C = [

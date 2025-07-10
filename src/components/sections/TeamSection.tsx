@@ -4,9 +4,9 @@ import { team } from "@/data/team";
 
 const TeamSection = () => {
   return (
-    <section id="команда" className="py-20 bg-cream">
+    <section id="команда" className="py-20 bg-navy">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-playfair font-bold text-navy text-center mb-12">
+        <h2 className="text-4xl font-playfair font-bold text-cream text-center mb-12">
           Наша команда
         </h2>
         <div className="grid md:grid-cols-3 gap-8">

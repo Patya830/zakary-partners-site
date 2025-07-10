@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
-import { pricingB2B, pricingB2C } from "@/data/pricing";
+import { pricingB2B, pricingB2C } from "@/data/constants";
 
 const PricingSection = () => {
   return (

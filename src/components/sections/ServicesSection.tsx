@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
-import { servicesB2B, servicesB2C } from "@/data/services";
+import { servicesB2B, servicesB2C } from "@/data/constants";
 
 const ServicesSection = () => {
   return (
@@ -10,10 +10,14 @@ const ServicesSection = () => {
         <h2 className="text-4xl font-playfair font-bold text-navy text-center mb-12">
           Наши услуги
         </h2>
-        <Tabs defaultValue="b2b" className="w-full">
+        <Tabs defaultValue="b2b" className="max-w-6xl mx-auto">
           <TabsList className="grid w-full grid-cols-2 mb-8">
-            <TabsTrigger value="b2b">Для бизнеса</TabsTrigger>
-            <TabsTrigger value="b2c">Для граждан</TabsTrigger>
+            <TabsTrigger value="b2b" className="text-lg">
+              Юридическим лицам
+            </TabsTrigger>
+            <TabsTrigger value="b2c" className="text-lg">
+              Физическим лицам
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="b2b">
@@ -21,16 +25,16 @@ const ServicesSection = () => {
               {servicesB2B.map((service, index) => (
                 <Card
                   key={index}
-                  className="hover:shadow-lg transition-all duration-300 cursor-document group"
+                  className="border-navy/20 hover:border-gold hover:shadow-lg transition-all duration-300 cursor-stamp"
                 >
-                  <CardContent className="pt-6">
-                    <div className="flex items-center space-x-4">
+                  <CardContent className="pb-3">
+                    <div className="flex items-center space-x-3">
                       <Icon
                         name={service.icon}
-                        size={32}
-                        className="text-gold group-hover:scale-110 transition-transform"
+                        size={24}
+                        className="text-gold"
                       />
-                      <h3 className="text-navy font-semibold">
+                      <h3 className="text-navy text-lg font-semibold">
                         {service.name}
                       </h3>
                     </div>
@@ -45,16 +49,16 @@ const ServicesSection = () => {
               {servicesB2C.map((service, index) => (
                 <Card
                   key={index}
-                  className="hover:shadow-lg transition-all duration-300 cursor-document group"
+                  className="border-navy/20 hover:border-gold hover:shadow-lg transition-all duration-300 cursor-stamp"
                 >
-                  <CardContent className="pt-6">
-                    <div className="flex items-center space-x-4">
+                  <CardContent className="pb-3">
+                    <div className="flex items-center space-x-3">
                       <Icon
                         name={service.icon}
-                        size={32}
-                        className="text-gold group-hover:scale-110 transition-transform"
+                        size={24}
+                        className="text-gold"
                       />
-                      <h3 className="text-navy font-semibold">
+                      <h3 className="text-navy text-lg font-semibold">
                         {service.name}
                       </h3>
                     </div>

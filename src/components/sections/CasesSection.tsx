@@ -6,20 +6,20 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { cases } from "@/data/cases";
+import { cases } from "@/data/constants";
 
 const CasesSection = () => {
   return (
     <section id="кейсы" className="py-20 bg-navy">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-playfair font-bold text-cream text-center mb-12">
-          Примеры наших дел
+          Успешные кейсы
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cases.map((caseItem, index) => (
             <Card
               key={index}
-              className="bg-cream hover:shadow-lg transition-all duration-300 cursor-document"
+              className="bg-cream border-gold/20 hover:border-gold transition-all duration-300 cursor-stamp"
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">

@@ -60,7 +60,7 @@ const Index = () => {
       position: "Юрист",
       speciality: "Статистика дел",
       image:
-        "https://cdn.poehali.dev/files/c1854827-2275-441a-b52b-f12bb743a254.jpg",
+        "https://cdn.poehali.dev/files/77a7cad0-9daf-4c8f-942f-0e8e95fafb06.jpg",
     },
   ];
 

@@ -101,6 +101,38 @@ const Index = () => {
     },
   ];
 
+  const pricingB2B = [
+    { service: "Консультация", price: "от 5 000 ₽", duration: "1 час" },
+    {
+      service: "Составление договоров",
+      price: "от 15 000 ₽",
+      duration: "3-5 дней",
+    },
+    { service: "Регистрация ООО", price: "от 25 000 ₽", duration: "10 дней" },
+    {
+      service: "Налоговые споры",
+      price: "от 100 000 ₽",
+      duration: "2-6 месяцев",
+    },
+    {
+      service: "Абонентское обслуживание",
+      price: "от 30 000 ₽/мес",
+      duration: "постоянно",
+    },
+  ];
+
+  const pricingB2C = [
+    { service: "Консультация", price: "от 2 000 ₽", duration: "1 час" },
+    { service: "Семейные споры", price: "от 20 000 ₽", duration: "1-3 месяца" },
+    { service: "Жилищные споры", price: "от 25 000 ₽", duration: "2-4 месяца" },
+    {
+      service: "Наследственные дела",
+      price: "от 30 000 ₽",
+      duration: "1-6 месяцев",
+    },
+    { service: "Автоюрист", price: "от 15 000 ₽", duration: "2-8 недель" },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-navy via-navy/95 to-burgundy cursor-gavel">
       {/* Header */}
@@ -117,12 +149,14 @@ const Index = () => {
               Zakary&Partners
             </h1>
             <nav className="hidden md:flex space-x-8">
-              {["О нас", "Команда", "Услуги", "Кейсы", "Контакты"].map(
+              {["О нас", "Команда", "Услуги", "Цены", "Кейсы", "Контакты"].map(
                 (item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase().replace(" ", "-")}`}
-                    className="text-cream hover:text-gold transition-colors cursor-stamp"
+                    className={`text-cream hover:text-gold transition-colors ${
+                      item === "Цены" ? "cursor-calculator" : "cursor-stamp"
+                    }`}
                   >
                     {item}
                   </a>
@@ -389,6 +423,110 @@ const Index = () => {
             <p className="text-cream/60 text-sm italic">
               * Не является гарантией результата. Каждый случай индивидуален.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="цены" className="py-20 bg-gradient-to-br from-navy to-burgundy relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23FFD700" fill-opacity="0.1"%3E%3Cpath d="M30 0l30 30-30 30L0 30z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-playfair font-bold text-cream mb-4">
+              Прозрачные цены
+            </h2>
+            <p className="text-cream/70 text-lg">
+              Выберите категорию услуг для просмотра актуальных тарифов
+            </p>
+          </div>
+          
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* B2B Pricing */}
+              <div className="group cursor-calculator">
+                <div className="bg-cream/10 backdrop-blur-sm rounded-2xl p-8 border border-gold/20 hover:border-gold/40 transition-all duration-300 hover:bg-cream/15 hover:scale-105">
+                  <div className="text-center mb-8">
+                    <div className="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                      <Icon name="Building2" size={32} className="text-navy" />
+                    </div>
+                    <h3 className="text-2xl font-playfair font-bold text-cream mb-2">
+                      Для бизнеса
+                    </h3>
+                    <p className="text-cream/60">
+                      Корпоративные юридические услуги
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    {pricingB2B.map((item, index) => (
+                      <div key={index} className="flex justify-between items-center p-4 bg-cream/5 rounded-lg hover:bg-cream/10 transition-colors">
+                        <div>
+                          <p className="text-cream font-medium">{item.service}</p>
+                          <p className="text-cream/60 text-sm">{item.duration}</p>
+                        </div>
+                        <div className="text-right">
+                          <p className="text-gold font-bold">{item.price}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  <div className="mt-8 text-center">
+                    <Button className="bg-gold text-navy hover:bg-gold/90 font-semibold px-8">
+                      Получить расчет
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              {/* B2C Pricing */}
+              <div className="group cursor-calculator">
+                <div className="bg-cream/10 backdrop-blur-sm rounded-2xl p-8 border border-gold/20 hover:border-gold/40 transition-all duration-300 hover:bg-cream/15 hover:scale-105">
+                  <div className="text-center mb-8">
+                    <div className="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                      <Icon name="User" size={32} className="text-navy" />
+                    </div>
+                    <h3 className="text-2xl font-playfair font-bold text-cream mb-2">
+                      Для граждан
+                    </h3>
+                    <p className="text-cream/60">
+                      Персональные юридические услуги
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    {pricingB2C.map((item, index) => (
+                      <div key={index} className="flex justify-between items-center p-4 bg-cream/5 rounded-lg hover:bg-cream/10 transition-colors">
+                        <div>
+                          <p className="text-cream font-medium">{item.service}</p>
+                          <p className="text-cream/60 text-sm">{item.duration}</p>
+                        </div>
+                        <div className="text-right">
+                          <p className="text-gold font-bold">{item.price}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  <div className="mt-8 text-center">
+                    <Button className="bg-gold text-navy hover:bg-gold/90 font-semibold px-8">
+                      Записаться на консультацию
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center mt-12">
+              <div className="bg-cream/10 backdrop-blur-sm rounded-lg p-6 border border-gold/20">
+                <p className="text-cream/80 text-sm">
+                  💡 <strong>Первичная консультация бесплатно</strong> при заключении договора на сумму от 50 000 ₽
+                </p>
+                <p className="text-cream/60 text-xs mt-2">
+                  * Окончательная стоимость услуг рассчитывается индивидуально в зависимости от сложности дела
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

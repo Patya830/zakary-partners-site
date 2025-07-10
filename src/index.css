@@ -122,6 +122,13 @@
       auto;
   }
 
+  .cursor-calculator {
+    cursor:
+      url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFD700' stroke-width='2'%3e%3crect width='16' height='20' x='4' y='2' rx='2'/%3e%3cpath d='M8 6h8'/%3e%3cpath d='M16 14a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4z'/%3e%3cpath d='M8 10h.01'/%3e%3cpath d='M8 14h.01'/%3e%3cpath d='M8 18h.01'/%3e%3cpath d='M16 18h.01'/%3e%3c/svg%3e")
+        12 12,
+      auto;
+  }
+
   .scales-3d {
     transform-style: preserve-3d;
     transform: rotateX(15deg) rotateY(0deg);

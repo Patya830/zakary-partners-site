@@ -43,3 +43,4 @@ const Header = ({ isScrolled }: HeaderProps) => {
 };
 
 export default Header;
+export { Header };

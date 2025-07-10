@@ -428,8 +428,13 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="цены" className="py-20 bg-gradient-to-br from-navy to-burgundy relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23FFD700" fill-opacity="0.1"%3E%3Cpath d="M30 0l30 30-30 30L0 30z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+      <section
+        id="цены"
+        className="py-20 bg-gradient-to-br from-navy to-burgundy relative overflow-hidden"
+      >
+        <div className="absolute inset-0 opacity-20">
+          <div className="w-full h-full bg-gradient-to-br from-gold/10 to-transparent"></div>
+        </div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-playfair font-bold text-cream mb-4">
@@ -439,7 +444,7 @@ const Index = () => {
               Выберите категорию услуг для просмотра актуальных тарифов
             </p>
           </div>
-          
+
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               {/* B2B Pricing */}
@@ -456,13 +461,20 @@ const Index = () => {
                       Корпоративные юридические услуги
                     </p>
                   </div>
-                  
+
                   <div className="space-y-4">
                     {pricingB2B.map((item, index) => (
-                      <div key={index} className="flex justify-between items-center p-4 bg-cream/5 rounded-lg hover:bg-cream/10 transition-colors">
+                      <div
+                        key={index}
+                        className="flex justify-between items-center p-4 bg-cream/5 rounded-lg hover:bg-cream/10 transition-colors"
+                      >
                         <div>
-                          <p className="text-cream font-medium">{item.service}</p>
-                          <p className="text-cream/60 text-sm">{item.duration}</p>
+                          <p className="text-cream font-medium">
+                            {item.service}
+                          </p>
+                          <p className="text-cream/60 text-sm">
+                            {item.duration}
+                          </p>
                         </div>
                         <div className="text-right">
                           <p className="text-gold font-bold">{item.price}</p>
@@ -470,7 +482,7 @@ const Index = () => {
                       </div>
                     ))}
                   </div>
-                  
+
                   <div className="mt-8 text-center">
                     <Button className="bg-gold text-navy hover:bg-gold/90 font-semibold px-8">
                       Получить расчет
@@ -493,13 +505,20 @@ const Index = () => {
                       Персональные юридические услуги
                     </p>
                   </div>
-                  
+
                   <div className="space-y-4">
                     {pricingB2C.map((item, index) => (
-                      <div key={index} className="flex justify-between items-center p-4 bg-cream/5 rounded-lg hover:bg-cream/10 transition-colors">
+                      <div
+                        key={index}
+                        className="flex justify-between items-center p-4 bg-cream/5 rounded-lg hover:bg-cream/10 transition-colors"
+                      >
                         <div>
-                          <p className="text-cream font-medium">{item.service}</p>
-                          <p className="text-cream/60 text-sm">{item.duration}</p>
+                          <p className="text-cream font-medium">
+                            {item.service}
+                          </p>
+                          <p className="text-cream/60 text-sm">
+                            {item.duration}
+                          </p>
                         </div>
                         <div className="text-right">
                           <p className="text-gold font-bold">{item.price}</p>
@@ -507,7 +526,7 @@ const Index = () => {
                       </div>
                     ))}
                   </div>
-                  
+
                   <div className="mt-8 text-center">
                     <Button className="bg-gold text-navy hover:bg-gold/90 font-semibold px-8">
                       Записаться на консультацию
@@ -516,14 +535,16 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="text-center mt-12">
               <div className="bg-cream/10 backdrop-blur-sm rounded-lg p-6 border border-gold/20">
                 <p className="text-cream/80 text-sm">
-                  💡 <strong>Первичная консультация бесплатно</strong> при заключении договора на сумму от 50 000 ₽
+                  💡 <strong>Первичная консультация бесплатно</strong> при
+                  заключении договора на сумму от 50 000 ₽
                 </p>
                 <p className="text-cream/60 text-xs mt-2">
-                  * Окончательная стоимость услуг рассчитывается индивидуально в зависимости от сложности дела
+                  * Окончательная стоимость услуг рассчитывается индивидуально в
+                  зависимости от сложности дела
                 </p>
               </div>
             </div>

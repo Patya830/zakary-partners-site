@@ -23,7 +23,9 @@ const TeamSection = () => {
                     className={`w-64 h-64 rounded-full mx-auto shadow-lg border-2 border-gold/30 ${
                       member.name === "Ялковский Владимир"
                         ? "object-cover object-top"
-                        : "object-cover"
+                        : member.name === "Закарьяева Патимат"
+                          ? "object-cover object-[center_20%]"
+                          : "object-cover"
                     }`}
                   />
                 </div>

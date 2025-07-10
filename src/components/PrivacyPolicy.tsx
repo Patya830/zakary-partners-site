@@ -22,148 +22,204 @@ export const PrivacyPolicy = ({ children }: PrivacyPolicyProps) => {
       <DialogContent className="max-w-4xl max-h-[80vh]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-playfair text-navy">
-            Политика обработки персональных данных
+            Согласие на обработку персональных данных
           </DialogTitle>
         </DialogHeader>
         <ScrollArea className="h-[60vh] pr-4">
-          <div className="space-y-6 text-sm text-navy/80">
-            <section>
-              <h3 className="font-semibold text-lg text-navy mb-3">
-                1. Общие положения
-              </h3>
-              <p className="mb-3">
-                Настоящая Политика обработки персональных данных (далее —
-                Политика) действует в отношении всех персональных данных,
-                которые ИП Закарьяева Патимат Магомедовна (далее — Оператор)
-                может получить от Пользователя во время использования сайта и
-                получения юридических услуг.
+          <div className="space-y-6 text-sm text-navy/80 leading-relaxed">
+            <div className="bg-cream/10 p-4 rounded-lg border border-gold/20">
+              <p className="text-navy font-medium mb-4">
+                Настоящим Пользователь, действуя свободно, в своей воле и в
+                своем интересе, а также подтверждая свою дееспособность, дает
+                настоящее Согласие на обработку Персональных данных (далее –
+                «Согласие») ИП Закарьяевой Патимат Магомедовне (далее –
+                «Оператор"):
               </p>
-              <p>
-                Использование сайта означает безоговорочное согласие
-                Пользователя с настоящей Политикой и условиями обработки его
-                персональных данных.
-              </p>
-            </section>
+            </div>
 
             <section>
-              <h3 className="font-semibold text-lg text-navy mb-3">
-                2. Персональные данные, которые обрабатывает Оператор
-              </h3>
-              <p className="mb-3">
-                Оператор обрабатывает следующие персональные данные
-                Пользователей:
-              </p>
-              <ul className="list-disc pl-6 space-y-1">
-                <li>Фамилия, имя, отчество</li>
-                <li>Номер телефона</li>
-                <li>Адрес электронной почты</li>
-                <li>Информация о юридической проблеме</li>
-                <li>Иные данные, предоставляемые Пользователем добровольно</li>
-              </ul>
-            </section>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    1.
+                  </span>
+                  <p>
+                    Согласие дается Пользователем на сайте, расположенном в сети
+                    Интернет по адресу http://zakary&Partners/ (далее – «Сайт").
+                  </p>
+                </div>
 
-            <section>
-              <h3 className="font-semibold text-lg text-navy mb-3">
-                3. Цели обработки персональных данных
-              </h3>
-              <p className="mb-3">
-                Персональные данные обрабатываются в следующих целях:
-              </p>
-              <ul className="list-disc pl-6 space-y-1">
-                <li>Предоставление юридических услуг и консультаций</li>
-                <li>Связь с Пользователем для уточнения деталей заказа</li>
-                <li>
-                  Информирование о новых услугах и специальных предложениях
-                </li>
-                <li>Выполнение договорных обязательств</li>
-                <li>Соблюдение требований законодательства РФ</li>
-              </ul>
-            </section>
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    2.
+                  </span>
+                  <p>
+                    Принятием (акцептом) настоящего Согласия является активация
+                    чек-бокса рядом с текстом «Даю согласие на обработку
+                    персональных данных» и нажатие кнопки «Отправить заявку».
+                  </p>
+                </div>
 
-            <section>
-              <h3 className="font-semibold text-lg text-navy mb-3">
-                4. Правовые основания обработки
-              </h3>
-              <p className="mb-3">
-                Обработка персональных данных осуществляется на основании:
-              </p>
-              <ul className="list-disc pl-6 space-y-1">
-                <li>Согласия субъекта персональных данных</li>
-                <li>Необходимости исполнения договора</li>
-                <li>Необходимости соблюдения правовых обязательств</li>
-              </ul>
-            </section>
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    3.
+                  </span>
+                  <p>
+                    Пользователь дает согласие на обработку своих персональных
+                    данных как без использования средств автоматизации, так и с
+                    их использованием.
+                  </p>
+                </div>
 
-            <section>
-              <h3 className="font-semibold text-lg text-navy mb-3">
-                5. Порядок обработки персональных данных
-              </h3>
-              <p className="mb-3">
-                Оператор обрабатывает персональные данные с соблюдением
-                принципов:
-              </p>
-              <ul className="list-disc pl-6 space-y-1">
-                <li>Законности целей и способов обработки</li>
-                <li>Добросовестности</li>
-                <li>Соответствия целей обработки</li>
-                <li>Соразмерности</li>
-                <li>Точности, достаточности и актуальности</li>
-              </ul>
-            </section>
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    4.
+                  </span>
+                  <div>
+                    <p className="mb-2">
+                      Согласие дается на обработку следующих Персональных
+                      данных:
+                    </p>
+                    <ul className="ml-4 space-y-1">
+                      <li>• ФИО;</li>
+                      <li>• Контактный телефон;</li>
+                      <li>• Адрес электронной почты.</li>
+                    </ul>
+                  </div>
+                </div>
 
-            <section>
-              <h3 className="font-semibold text-lg text-navy mb-3">
-                6. Сроки обработки персональных данных
-              </h3>
-              <p>
-                Персональные данные обрабатываются в течение времени,
-                необходимого для достижения целей обработки, но не дольше срока,
-                установленного законодательством РФ или договором.
-              </p>
-            </section>
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    5.
+                  </span>
+                  <p>
+                    Целью обработки Персональных данных является осуществление
+                    связи с Пользователями, в том числе направление уведомлений,
+                    информации и запросов, связанных с оказанием услуг, а также
+                    обработка запросов и заявок Пользователей;
+                  </p>
+                </div>
 
-            <section>
-              <h3 className="font-semibold text-lg text-navy mb-3">
-                7. Права субъекта персональных данных
-              </h3>
-              <p className="mb-3">Пользователь имеет право:</p>
-              <ul className="list-disc pl-6 space-y-1">
-                <li>
-                  Получать информацию об обработке своих персональных данных
-                </li>
-                <li>
-                  Требовать уточнения, блокирования или уничтожения персональных
-                  данных
-                </li>
-                <li>Отозвать согласие на обработку персональных данных</li>
-                <li>
-                  Обжаловать действия Оператора в уполномоченный орган или суд
-                </li>
-              </ul>
-            </section>
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    6.
+                  </span>
+                  <div>
+                    <p className="mb-2">
+                      Пользователь дает согласие на осуществление следующих
+                      действий с персональными данными:
+                    </p>
+                    <div className="ml-4 grid grid-cols-2 gap-2">
+                      <ul className="space-y-1">
+                        <li>• сбор;</li>
+                        <li>• запись;</li>
+                        <li>• систематизация;</li>
+                        <li>• накопление;</li>
+                        <li>• хранение;</li>
+                        <li>• уточнение (обновление, изменение);</li>
+                        <li>• извлечение;</li>
+                      </ul>
+                      <ul className="space-y-1">
+                        <li>• использование;</li>
+                        <li>
+                          • передача (распространение, предоставление, доступ),
+                          в том числе трансграничная передача;
+                        </li>
+                        <li>• обезличивание;</li>
+                        <li>• блокирование;</li>
+                        <li>• удаление;</li>
+                        <li>• уничтожение;</li>
+                        <li>
+                          • передача третьим лицам для цели, указанной в п. 5
+                          настоящего Согласия.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-            <section>
-              <h3 className="font-semibold text-lg text-navy mb-3">
-                8. Безопасность персональных данных
-              </h3>
-              <p>
-                Оператор применяет технические и организационные меры для защиты
-                персональных данных от неправомерного доступа, уничтожения,
-                изменения, блокирования, копирования, предоставления,
-                распространения.
-              </p>
-            </section>
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    7.
+                  </span>
+                  <p>
+                    Согласие считается действующим до момента его отзыва
+                    Пользователем.
+                  </p>
+                </div>
 
-            <section>
-              <h3 className="font-semibold text-lg text-navy mb-3">
-                9. Контактная информация
-              </h3>
-              <div className="bg-cream/50 p-4 rounded-lg">
-                <p className="font-semibold text-navy">
-                  ИП Закарьяева Патимат Магомедовна
-                </p>
-                <p>Email: info@zakarypartners.ru</p>
-                <p>Телефон: +7 (495) 123-45-67</p>
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    8.
+                  </span>
+                  <p>
+                    Условием для прекращения обработки является достижение цели
+                    обработки персональных данных, истечение срока действия
+                    согласия или отзыв Согласия на обработку Персональных данных
+                    Пользователем.
+                  </p>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    9.
+                  </span>
+                  <p>
+                    Пользователь имеет право отозвать свое Согласие посредством
+                    составления соответствующего письменного документа, который
+                    может быть направлен в простой письменной форме по адресу
+                    Оператора, указанному в п. 12 настоящего Согласия, а также
+                    на адрес электронной почты Оператора: info@zarlaw.ru.
+                  </p>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    10.
+                  </span>
+                  <p>
+                    Пользователь согласен с тем, что на основании его
+                    письменного обращения с требованием о прекращении обработки
+                    Персональных данных Оператор прекратит обработку таких
+                    сведений в течение 15 (пятнадцати) календарных дней.
+                  </p>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    11.
+                  </span>
+                  <p>
+                    В случае отзыва Пользователем Согласия на обработку
+                    персональных данных Оператор вправе продолжить обработку
+                    персональных данных без согласия Пользователя при наличии
+                    оснований, указанных в пунктах 2–11 части 1 статьи 6, части
+                    2 статьи 10 и части 2 статьи 11 Федерального закона № 152-ФЗ
+                    «О персональных данных» от 27.07.2006 г.
+                  </p>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <span className="text-gold font-semibold text-lg mt-1">
+                    12.
+                  </span>
+                  <div>
+                    <p className="mb-3 font-medium">Реквизиты Оператора:</p>
+                    <div className="bg-cream/20 p-4 rounded-lg border border-gold/30">
+                      <div className="space-y-2">
+                        <p className="font-semibold text-navy">
+                          ИП Закарьяева Патимат Магомедовна
+                        </p>
+                        <p>ОГРИП __________________</p>
+                        <p>ИНН _________________</p>
+                        <p>Адрес регистрации ____________________________</p>
+                        <p>Почтовый адрес ___________________</p>
+                        <p>Телефон + 7 _________</p>
+                        <p>E-mail ____________</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
           </div>

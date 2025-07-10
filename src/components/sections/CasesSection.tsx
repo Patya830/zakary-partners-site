@@ -6,6 +6,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import Icon from "@/components/ui/icon";
 import { cases } from "@/data/constants";
 
 const CasesSection = () => {
@@ -43,11 +45,28 @@ const CasesSection = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-navy">Решение:</h4>
-                  <p className="text-green-600 font-medium">
-                    {caseItem.solution}
-                  </p>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-navy mb-2">Решение:</h4>
+                    <p className="text-green-600 font-medium text-sm leading-relaxed">
+                      {caseItem.solution}
+                    </p>
+                  </div>
+                  {(caseItem as any).pdfUrl && (
+                    <div className="pt-2">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="w-full border-gold text-gold hover:bg-gold hover:text-navy transition-all duration-300"
+                        onClick={() =>
+                          window.open((caseItem as any).pdfUrl, "_blank")
+                        }
+                      >
+                        <Icon name="FileText" size={16} className="mr-2" />
+                        Посмотреть судебный акт
+                      </Button>
+                    </div>
+                  )}
                 </div>
               </CardContent>
             </Card>

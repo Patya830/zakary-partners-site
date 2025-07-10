@@ -11,7 +11,7 @@ export const team: TeamMember[] = [
     position: "Управляющий юрист",
     speciality: "Дипломы и сертификаты",
     image:
-      "https://cdn.poehali.dev/files/c0dd0261-745c-4a1d-8c69-6a2931682e6a.jpg",
+      "https://cdn.poehali.dev/files/50b35731-ae87-4c71-af25-b4de6cc23389.jpg",
   },
   {
     name: "Политов Роман",

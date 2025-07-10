@@ -46,7 +46,8 @@ const Index = () => {
       name: "Закарьяева Патимат",
       position: "Управляющий юрист",
       speciality: "Дипломы и сертификаты",
-      image: "/img/f23cafca-1cbd-4cec-892c-6051bf673f78.jpg",
+      image:
+        "https://cdn.poehali.dev/files/9471d0be-8f79-4284-9dcf-de2447e33a49.jpg",
     },
     {
       name: "Политов Роман",

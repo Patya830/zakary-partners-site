@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { companyInfo } from "@/data/constants";
+import VideoBackground from "../VideoBackground";
 
 interface HeroSectionProps {
   mousePosition: { x: number; y: number };
@@ -9,7 +10,25 @@ interface HeroSectionProps {
 const HeroSection = ({ mousePosition, scrollY }: HeroSectionProps) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-navy/50 to-burgundy/30"></div>
+      {/* 3D Animated Background */}
+      <VideoBackground scrollY={scrollY} />
+      
+      {/* Static Background Image for depth */}
+      <div className="absolute inset-0 opacity-30">
+        <img
+          src="/img/0a26ac84-6dda-4e81-98e6-e0fada86ff14.jpg"
+          alt="Legal background"
+          className="w-full h-full object-cover"
+          style={{
+            transform: `scale(1.05) translateY(${scrollY * 0.2}px)`,
+            filter: "brightness(0.3) contrast(1.1) blur(1px)",
+          }}
+        />
+      </div>
+      
+      {/* Gradient overlays for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-br from-navy/60 via-transparent to-burgundy/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent"></div>
 
       {/* 3D Scales */}
       <div
